@@ -309,3 +309,25 @@ user:
 
 search:
   data: ${gravitee.home}/data
+
+notifiers:
+  email:
+    enabled: true
+    subject: ${email.subject}
+    host: ${email.host}
+    port: ${email.port}
+    from: ${email.from}
+    username: ${email.username}
+    password: ${email.password}
+#    starttls.enabled: false
+#    ssl:
+#      trustAll: false
+#      keyStore:
+#      keyStorePassword:
+
+alerts:
+  vertx:
+    enabled: false
+    hazelcast:
+      config:
+        path: ${gravitee.home}/config/hazelcast.xml
